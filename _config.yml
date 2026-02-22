@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 桑浩翔的博客
+subtitle: 大肥鸭的代码与生活
+description: 桑浩翔的个人博客，记录技术、考研、项目与思考
 keywords:
-author: John Doe
-language: en
+author: 桑浩翔
+language: zh-CN
 timezone: ''
 
 # URL
@@ -68,6 +68,7 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+root: /
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
