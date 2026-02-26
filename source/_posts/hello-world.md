@@ -1,41 +1,18 @@
----
-title: Hello World
----
+# 自我介绍
 
-大家好我是桑浩翔
+桑浩翔（Haoxiang Sang），也可以叫我大肥鸭。
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+## 教育
 
-## Quick Start
+2021.9 — 2025.6 安徽大学 信息安全
+2025.9 — 至今 中国农业大学 数据科学与大数据技术
 
-### Create a new post
+## 获奖
 
-``` bash
-$ hexo new "My New Post"
-```
+2022 年第 47 届 ICPC 国际大学生程序设计竞赛亚洲区域赛（合肥）银奖、2023 年第 19 届百度之星程序设计大赛大学组银奖、2024 年安徽省大学生网络与分布式系统大赛技能赛网络漏洞挖掘与防范赛道一等奖（安徽省第二名）、2025 年第 17 届全国大学生数学竞赛山东赛区（非数学A类）一等奖
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 联系我
 
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+邮箱：sanghaoxiang [at] gmail [dot] com
+抖音：[关注大肥鸭喵](https://www.douyin.com/user/MS4wLjABAAAAZzcbh1qQz1FnSphH_6WaOaEtZaHqcdIUFKKsho47CIVFOpMIiaVib8czDvdFOEZt)
+知乎：[关注大肥鸭喵](https://www.zhihu.com/people/sanghaoxiang)
