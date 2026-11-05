@@ -1,0 +1,8 @@
+menu:
+  留言板: /guestbook/
+
+# GitHub 登录评论。首次启用需为此仓库安装 https://github.com/apps/utterances
+utterances:
+  enable: true
+  repo: Big-Fat-Duck/Big-Fat-Duck.github.io
+  theme: github-light

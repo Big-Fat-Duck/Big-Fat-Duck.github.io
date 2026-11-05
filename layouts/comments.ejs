@@ -1,0 +1,26 @@
+<% if (theme.utterances && theme.utterances.enable && page.comments !== false) { %>
+<%
+  // Keep directory and index.html URLs in the same thread, including fallback links.
+  const pathname = new URL(page.permalink).pathname.replace(/index\.html$/, '');
+  const issueTerm = pathname.length < 2 ? 'index' : pathname.slice(1).replace(/\.\w+$/, '');
+  const issueSearch = 'https://github.com/' + theme.utterances.repo + '/issues?q=' +
+    encodeURIComponent('is:issue in:title "' + issueTerm + '"');
+%>
+<section id="comments" class="comments-panel" aria-labelledby="comments-title">
+  <link rel="stylesheet" href="<%- url_for('/css/comments.css') %>">
+  <header class="comments-header">
+    <h2 id="comments-title">留言与评论</h2>
+    <p>使用 GitHub 账号登录后即可发表评论。留言会公开显示，欢迎友善交流。</p>
+  </header>
+  <div class="comments-widget">
+    <script src="https://utteranc.es/client.js"
+            repo="<%= theme.utterances.repo %>"
+            issue-term="<%= issueTerm %>"
+            theme="<%= theme.utterances.theme || 'github-light' %>"
+            crossorigin="anonymous"
+            async></script>
+  </div>
+  <p class="comments-fallback">评论区加载较慢？<a href="<%= issueSearch %>" target="_blank" rel="noopener noreferrer">在 GitHub 查看评论</a></p>
+  <noscript><p class="comments-fallback">请启用 JavaScript 以显示评论区，也可以通过上方链接前往 GitHub 参与讨论。</p></noscript>
+</section>
+<% } %>
