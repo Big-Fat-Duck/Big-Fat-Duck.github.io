@@ -2,6 +2,26 @@
 
 基于 Hexo 和 Landscape 主题，通过 GitHub Actions 发布到 GitHub Pages。
 
+## RSS / Atom 订阅
+
+- RSS 2.0：<https://sanghaoxiang.com/rss.xml>
+- Atom 1.0：<https://sanghaoxiang.com/atom.xml>
+
+把任一地址添加到 RSS 阅读器即可订阅。导航栏的「RSS 订阅」和订阅图标均指向 RSS 地址；页面也提供两种格式的自动发现链接。
+
+订阅源使用免费的 Hexo 官方 `hexo-generator-feed` 插件生成，随现有 GitHub Pages 网站一起托管，无需额外账号、服务器或订阅服务费用。
+每次推送到 `main` 并完成 Pages 发布后，订阅源会自动更新，包含最新 20 篇已发布文章的全文；留言板和评论不作为订阅文章。
+
+为了避免每次部署都被阅读器误判为文章更新，未设置 `updated` 时沿用文章发布日期。修改旧文章并希望阅读器识别更新时，在文章 front matter 中填写实际更新时间，例如：
+
+```yaml
+updated: 2026-11-05 22:00:00
+```
+
+站点日期按 `Asia/Shanghai` 处理，订阅内容和链接使用正式域名 `https://sanghaoxiang.com`。
+
+插件固定为 `3.0.0`，升级时需重新检查 RSS 作者字段、文章 GUID 以及 Atom 正文的 HTML 类型。`layouts/rss2.xml` 基于该版本的官方模板，仅将评论锚点调整为本站的 `#comments`；原 MIT 许可保留在 `layouts/rss2.LICENSE`。
+
 ## 本地开发
 
 ```sh

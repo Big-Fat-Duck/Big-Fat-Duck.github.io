@@ -1,5 +1,8 @@
 menu:
   留言板: /guestbook/
+  RSS 订阅: /rss.xml
+
+rss: /rss.xml
 
 # GitHub 登录评论。首次启用需为此仓库安装 https://github.com/apps/utterances
 utterances:

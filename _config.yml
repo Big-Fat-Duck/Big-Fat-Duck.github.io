@@ -9,11 +9,11 @@ description: 桑浩翔的个人博客，记录技术、考研、项目与思考
 keywords:
 author: 桑浩翔
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://Big-Fat-Duck.github.io
+url: https://sanghaoxiang.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -81,7 +81,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -98,6 +98,25 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
+
+# RSS / Atom feeds, generated on every deployment by hexo-generator-feed.
+feed:
+  enable: true
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss.xml
+  limit: 20
+  content: true
+  order_by: -date
+  icon: /favicon.png
+  template:
+    - node_modules/hexo-generator-feed/atom.xml
+    - layouts/rss2.xml
+  # Landscape already outputs feed_tag() for both formats.
+  autodiscovery: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
