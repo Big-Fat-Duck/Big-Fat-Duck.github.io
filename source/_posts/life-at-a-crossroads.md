@@ -1,6 +1,7 @@
 ---
 title: 站在人生的十字路口：关于选择、遗憾与未来
 date: 2026-11-06 00:12:57
+permalink: 2026/11/06/life-at-a-crossroads/
 tags:
   - 随笔
 ---
